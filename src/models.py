@@ -298,6 +298,7 @@ class RSSSourceConfig(BaseModel):
     enabled: bool = True
     category: Optional[str] = None
     content_extractor: Optional[str] = None
+    fetch_limit: Optional[int] = Field(default=None, ge=1)  # keep only the N newest entries
     profile: ProfileRoute = None
 
 

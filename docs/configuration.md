@@ -442,12 +442,15 @@ for validation and fallback rules.
         "url": "https://example.com/feed.xml",
         "enabled": true,
         "category": "ai-ml",
+        "fetch_limit": 5,
         "profile": "auto"
       }
     ]
   }
 }
 ```
+
+`fetch_limit` is optional: when set, only the N newest entries inside the time window are kept for that feed, which helps keep AI request counts low on busy feeds.
 
 ### Reddit
 

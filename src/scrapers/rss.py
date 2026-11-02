@@ -132,6 +132,10 @@ class RSSScraper(BaseScraper):
                 result.failures[label] = error
                 logger.warning("Skipping RSS entry %s: %s", label, error)
 
+        if source.fetch_limit is not None and len(result.items) > source.fetch_limit:
+            result.items.sort(key=lambda item: item.published_at, reverse=True)
+            del result.items[source.fetch_limit:]
+
         # A feed with only rejected entries is not a successful empty response.
         result.successful = int(bool(result.items) or not result.failures)
         return result

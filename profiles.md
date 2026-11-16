@@ -22,6 +22,7 @@ rather than process the item with all of them.
 | `tech-blog` | Engineering deep dives, tutorials, investigations, and retrospectives | Background, solution, and takeaways |
 | `finance-news` | Markets, macroeconomics, company finance, and economically material policy | Summary and background; direct impact when useful |
 | `ai-creator` | AI developments with potential for content creation | Summary; timely hooks, content angles, and community discussion when useful |
+| `intel-news` | Intelligence agencies and oversight, OSINT, cyber threat intelligence, commercial intelligence firms, and geospatial or satellite intelligence | Sourced summary and necessary background, with impact when the evidence supports it; allegations are attributed |
 
 Start with a built-in profile, then adjust its prompts or blocks to match your reading needs.
 

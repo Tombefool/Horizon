@@ -7,7 +7,9 @@ title: Home
 
 <div id="lang-zh" class="lang-section" markdown="1">
 
-欢迎来到 [Horizon](https://github.com/thysrael/Horizon)，一个 AI 驱动的信息聚合系统。
+欢迎来到本站的 [Horizon](https://github.com/Tombefool/Horizon) 日报。当前实例关注**全球情报行业热点与动态**（公开报道），每日自动发布中英双语简报。
+
+专题说明见 [全球情报行业日报说明](intel-briefing)，可了解信息源、筛选范围和已知限制。
 
 ## 文档
 
@@ -32,7 +34,9 @@ title: Home
 
 <div id="lang-en" class="lang-section" markdown="1">
 
-Welcome to [Horizon](https://github.com/thysrael/Horizon), an AI-driven information aggregation system.
+Welcome to this [Horizon](https://github.com/Tombefool/Horizon) daily briefing. This instance tracks **global intelligence-industry news** from public reporting, published each day in Chinese and English.
+
+See the [briefing notes](intel-briefing) (in Chinese) for sources, scope, and limitations.
 
 ## Documentation
 

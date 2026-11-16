@@ -23,136 +23,144 @@
   },
   "processing": {
     "profiles_dir": "profiles",
-    "default_profile": "tech-lite",
+    "default_profile": "intel-news",
     "profile_settings": {
-      "tech-lite": {
+      "intel-news": {
         "threshold": 6.5,
         "topic_dedup": true
       }
     }
   },
   "sources": {
-    "github": [
-      {
-        "type": "repo_releases",
-        "owner": "vllm-project",
-        "repo": "vllm",
-        "enabled": true,
-        "profile": "tech-lite"
-      },
-      {
-        "type": "repo_releases",
-        "owner": "ollama",
-        "repo": "ollama",
-        "enabled": true,
-        "profile": "tech-lite"
-      },
-      {
-        "type": "repo_releases",
-        "owner": "huggingface",
-        "repo": "transformers",
-        "enabled": true,
-        "profile": "tech-lite"
-      }
-    ],
+    "github": [],
     "hackernews": {
-      "enabled": true,
+      "enabled": false,
       "fetch_top_stories": 20,
       "min_score": 150,
-      "profile": "tech-lite"
+      "profile": "intel-news"
     },
     "rss": [
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
+        "name": "The Cipher Brief",
+        "url": "https://www.thecipherbrief.com/feed",
         "enabled": true,
-        "category": "ai-tools",
-        "profile": "tech-lite",
+        "category": "agencies-policy",
+        "profile": "intel-news",
         "fetch_limit": 3
       },
       {
-        "name": "OpenAI News",
-        "url": "https://openai.com/news/rss.xml",
+        "name": "CISA News",
+        "url": "https://www.cisa.gov/news.xml",
         "enabled": true,
-        "category": "ai-labs",
-        "profile": "tech-lite",
+        "category": "agencies-policy",
+        "profile": "intel-news",
         "fetch_limit": 2
       },
       {
-        "name": "Google DeepMind Blog",
-        "url": "https://deepmind.google/blog/rss.xml",
+        "name": "NCSC UK News",
+        "url": "https://www.ncsc.gov.uk/api/1/services/v1/news-rss-feed.xml",
         "enabled": true,
-        "category": "ai-labs",
-        "profile": "tech-lite",
+        "category": "agencies-policy",
+        "profile": "intel-news",
         "fetch_limit": 2
       },
       {
-        "name": "Google AI Blog",
-        "url": "https://blog.google/technology/ai/rss/",
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/feed/",
         "enabled": true,
-        "category": "ai-labs",
-        "profile": "tech-lite",
+        "category": "agencies-policy",
+        "profile": "intel-news",
         "fetch_limit": 2
       },
       {
-        "name": "Hugging Face Blog",
-        "url": "https://huggingface.co/blog/feed.xml",
+        "name": "Bellingcat",
+        "url": "https://www.bellingcat.com/feed/",
         "enabled": true,
-        "category": "open-source-ai",
-        "profile": "tech-lite",
+        "category": "osint",
+        "profile": "intel-news",
         "fetch_limit": 2
       },
       {
-        "name": "MIT Technology Review AI",
-        "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+        "name": "The Record",
+        "url": "https://therecord.media/feed",
         "enabled": true,
-        "category": "ai-industry",
-        "profile": "tech-lite",
-        "fetch_limit": 2
-      },
-      {
-        "name": "TechCrunch AI",
-        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-        "enabled": true,
-        "category": "ai-industry",
-        "profile": "tech-lite",
+        "category": "threat-intelligence",
+        "profile": "intel-news",
         "fetch_limit": 3
       },
       {
-        "name": "InfoQ 中文",
-        "url": "https://www.infoq.cn/feed",
+        "name": "CyberScoop",
+        "url": "https://cyberscoop.com/feed/",
         "enabled": true,
-        "category": "tech-china",
-        "fetch_limit": 2,
-        "profile": "tech-lite"
+        "category": "threat-intelligence",
+        "profile": "intel-news",
+        "fetch_limit": 3
       },
       {
-        "name": "GitHub Blog",
-        "url": "https://github.blog/feed/",
+        "name": "Unit 42",
+        "url": "https://unit42.paloaltonetworks.com/feed/",
         "enabled": true,
-        "category": "developer-tools",
-        "profile": "tech-lite",
+        "category": "threat-intelligence",
+        "profile": "intel-news",
+        "fetch_limit": 2
+      },
+      {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/feed/",
+        "enabled": true,
+        "category": "threat-intelligence",
+        "profile": "intel-news",
         "fetch_limit": 1
+      },
+      {
+        "name": "CERT-EU Threat Intelligence",
+        "url": "https://cert.europa.eu/publications/threat-intelligence-rss",
+        "enabled": true,
+        "category": "threat-intelligence",
+        "profile": "intel-news",
+        "fetch_limit": 1
+      },
+      {
+        "name": "Recorded Future",
+        "url": "https://www.recordedfuture.com/feed",
+        "enabled": true,
+        "category": "commercial-intel",
+        "profile": "intel-news",
+        "fetch_limit": 2
+      },
+      {
+        "name": "Flashpoint Blog",
+        "url": "https://flashpoint.io/blog/feed/",
+        "enabled": true,
+        "category": "commercial-intel",
+        "profile": "intel-news",
+        "fetch_limit": 2
+      },
+      {
+        "name": "USGIF",
+        "url": "https://usgif.org/feed/",
+        "enabled": true,
+        "category": "geoint",
+        "profile": "intel-news",
+        "fetch_limit": 2
+      },
+      {
+        "name": "Via Satellite Government/Military",
+        "url": "https://www.satellitetoday.com/government-military/feed/",
+        "enabled": true,
+        "category": "geoint",
+        "profile": "intel-news",
+        "fetch_limit": 2
       }
     ],
     "reddit": {
-      "enabled": true,
-      "subreddits": [
-        {
-          "subreddit": "LocalLLaMA",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 5,
-          "min_score": 150,
-          "profile": "tech-lite"
-        }
-      ],
+      "enabled": false,
+      "subreddits": [],
       "users": [],
       "fetch_comments": 5
     },
     "ossinsight": {
-      "enabled": true,
+      "enabled": false,
       "period": "past_24_hours",
       "languages": [
         "All"
@@ -160,7 +168,7 @@
       "keywords": [],
       "min_stars": 50,
       "max_items": 4,
-      "profile": "tech-lite"
+      "profile": "intel-news"
     }
   },
   "collection": {
@@ -169,10 +177,47 @@
   "digest": {
     "max_items": 8,
     "profile_order": [
-      "tech-lite"
+      "intel-news"
     ],
-    "category_groups": {},
+    "group_by": "category",
+    "category_groups": {
+      "agencies-policy": {
+        "name": "Agencies & Policy",
+        "limit": 2,
+        "categories": [
+          "agencies-policy"
+        ]
+      },
+      "osint": {
+        "name": "OSINT",
+        "limit": 2,
+        "categories": [
+          "osint"
+        ]
+      },
+      "threat-intelligence": {
+        "name": "Threat Intelligence",
+        "limit": 3,
+        "categories": [
+          "threat-intelligence"
+        ]
+      },
+      "commercial-intel": {
+        "name": "Commercial Intelligence",
+        "limit": 2,
+        "categories": [
+          "commercial-intel"
+        ]
+      },
+      "geoint": {
+        "name": "Geospatial & Satellite",
+        "limit": 2,
+        "categories": [
+          "geoint"
+        ]
+      }
+    },
     "default_group": "other",
-    "default_group_limit": null
+    "default_group_limit": 1
   }
 }

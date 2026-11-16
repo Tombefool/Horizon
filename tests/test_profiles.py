@@ -15,7 +15,7 @@ def test_loads_builtin_profiles():
         Path(__file__).resolve().parents[1] / "profiles", "tech-news"
     )
 
-    for profile_id in ("tech-news", "tech-blog", "finance-news"):
+    for profile_id in ("tech-news", "tech-blog", "finance-news", "intel-news"):
         profile = registry.get(profile_id)
         assert profile.match_prompt
         assert profile.analysis_prompt
